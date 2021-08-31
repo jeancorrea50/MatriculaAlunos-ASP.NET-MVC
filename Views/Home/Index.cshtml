@@ -1,0 +1,34 @@
+﻿@using VendasCelulares.Models;
+
+
+
+   
+
+        <table class="table">
+
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Cor</th>
+                <th>Imagem</th>
+
+            </tr>
+
+            @foreach (Produto p in ViewBag.produtos)
+
+            {
+        <tr>
+            <td>@p.NomeProduto</td>
+            <td>@p.Preco</td>
+            <td>@p.Cor</td>
+            <td><img src="~/Imagens/ @p.Imagens" /></td>
+
+
+
+        </tr>
+            }
+
+        </table>
+
+
+   
