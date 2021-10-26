@@ -39,7 +39,6 @@ namespace MatriculaFaculdade
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseMigrationsEndPoint();
             }
             else
             {
@@ -59,7 +58,7 @@ namespace MatriculaFaculdade
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Alunos}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

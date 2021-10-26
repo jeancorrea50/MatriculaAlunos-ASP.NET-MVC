@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Data",
+    "\\wwwroot"
   ],
-  "SelectedNode": "\\Matricula-Aluno.sln",
+  "SelectedNode": "\\MatriculaFaculdade.csproj",
   "PreviewInSolutionExplorer": false
 }

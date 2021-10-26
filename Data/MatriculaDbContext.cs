@@ -1,4 +1,5 @@
-﻿using Matricula;
+﻿using MatriculaFaculdade;
+using MatriculaFaculdade.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -22,13 +23,15 @@ namespace MatriculaFaculdade.Data
             optionsBuilder.UseSqlServer("Password=Bf18102907;Persist Security Info=True;User ID=jeancpcorrea;Initial Catalog=Matricula Alunos;Data Source=DESKTOP-43O4B71\\SQLEXPRESS");
 
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // to passando que o novo das tabelas no banco de dados será "Categoria " e "Produto", caso nao passe este parametro, será criado no pural, ex "Produtos" 
             modelBuilder.Entity<AlunoModel>().ToTable("Aluno");
             modelBuilder.Entity<CursoModel>().ToTable("Curso");
+          
+
+        }
 
         }
     }
-}
+

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeanc\\Source\\Repos\\MatriculaAluno\\MatriculaFaculdade.csproj": {}
+    "C:\\Users\\jeanc\\source\\repos\\MatriculaAluno\\MatriculaFaculdade.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeanc\\Source\\Repos\\MatriculaAluno\\MatriculaFaculdade.csproj": {
+    "C:\\Users\\jeanc\\source\\repos\\MatriculaAluno\\MatriculaFaculdade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeanc\\Source\\Repos\\MatriculaAluno\\MatriculaFaculdade.csproj",
+        "projectUniqueName": "C:\\Users\\jeanc\\source\\repos\\MatriculaAluno\\MatriculaFaculdade.csproj",
         "projectName": "MatriculaFaculdade",
-        "projectPath": "C:\\Users\\jeanc\\Source\\Repos\\MatriculaAluno\\MatriculaFaculdade.csproj",
+        "projectPath": "C:\\Users\\jeanc\\source\\repos\\MatriculaAluno\\MatriculaFaculdade.csproj",
         "packagesPath": "C:\\Users\\jeanc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeanc\\Source\\Repos\\MatriculaAluno\\obj\\",
+        "outputPath": "C:\\Users\\jeanc\\source\\repos\\MatriculaAluno\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jeanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,10 +40,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.11, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -64,9 +60,9 @@
               "target": "Package",
               "version": "[5.0.11, )"
             },
-            "Microsoft.NETCore": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.2, )"
             }
           },
           "imports": [

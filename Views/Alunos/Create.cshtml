@@ -1,0 +1,53 @@
+﻿@model MatriculaFaculdade.Models.AlunoModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Novo Aluno</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomeCompleto">Nome Completo:</label><br>
+                <input asp-for="NomeCompleto" class="form-control" />
+                <span asp-validation-for="NomeCompleto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPF" class="control-label"></label>
+                <input asp-for="CPF" class="form-control" />
+                <span asp-validation-for="CPF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.DataNascimento">Data Nascimento:</label><br>
+                <input asp-for="@Model.DataNascimento" class="form-control" type="date">
+                <span asp-validation-for="@Model.DataNascimento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.IdCurso">Cursos</label><br>
+                <select asp-for="@Model.IdCurso" class="form-control"
+                        asp-items="@(IEnumerable<SelectListItem>)ViewBag.Cursos"></select>
+                <span asp-validation-for="@Model.IdCurso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Retornar a lista de Alunos</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

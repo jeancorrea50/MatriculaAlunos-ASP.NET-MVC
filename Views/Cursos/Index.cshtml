@@ -1,0 +1,41 @@
+﻿@model IEnumerable<MatriculaFaculdade.Models.CursoModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create">Novo Curso</a>
+</p>
+
+<hr>
+
+<partial name="_Mensagem" />
+<table class="table table-striped tabela-clientes">
+    <thead>
+        <tr>
+            <th>Nome</th>
+           
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var curso in Model)
+        {
+            <tr>
+                <td>@curso.NomeCurso</td>
+               
+              
+                <td>
+                    <a asp-action="Create" asp-route-id="@curso.IdCurso" class="btn btn-sm btn-secondary"><i class="bi-pencil" title="Alterar cliente"></i></a>
+                    <a asp-action="Delete" asp-route-id="@curso.IdCurso" class="btn btn-sm btn-danger"><i class="bi-trash" title="Excluir cliente"></i></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+else
+{
+<p>Não há nenhum cliente cadastrado.</p>
+}
