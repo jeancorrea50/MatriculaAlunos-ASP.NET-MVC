@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "VendasCelulares": {
+    "Matricula-Aluno": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
